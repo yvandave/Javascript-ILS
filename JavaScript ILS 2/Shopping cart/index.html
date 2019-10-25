@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Courses to Shopping Cart</title>
+     <script src="app.js"defer></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="skeleton.css">
+</head>
+<body>
+
+ <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="hero-content">
+                                <h2>Learn Something Today</h2>
+                                <p>Best Shirt that you ever had!</p>
+                                <form action="#" id="search" method="post" class="form">
+                                </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-bar">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns icon icon1">
+                        <p>Best clothes' and Hoodies <br>
+                        Learn how to fashion</p>
+                    </div>
+                    <div class="four columns icon icon2">
+                        <p>Learning with experienced<br>
+                        Learn with different life styles</p>
+                    </div>
+                    <div class="four columns icon icon3">
+                        <p>Lifetime access <br>
+                        learn at your own pace</p>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="courses-list" class="container">
+        <h1 id="heading" class="heading">Clothes' and Hoodies</h1>
+    <div class="row">
+        
+        <div class="col">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+    </div>
+</nav>
+
+
+<!-- Main -->
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 50rem;">
+  <img class="card-img-top" src="../Shopping cart/vanz.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Vans, Blue Shirt</h4>
+    <p class="card-text">Price: 500</p>
+    <a href="#" data-name="Vans Blue Shirt" data-price="500" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <br /><br />
+
+      <div class="col">
+        <div class="card" style="width: 50rem;">
+  <img class="card-img-top" src="../Shopping cart/vanzarmy.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Vans, Army Shirt</h4>
+    <p class="card-text">Price: 500</p>
+    <a href="#" data-name="Vans Army Shirt" data-price="500" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <br /><br />
+
+      <div class="col">
+        <div class="card" style="width: 50rem;">
+  <img class="card-img-top" src="../Shopping cart/vanzlongsleev.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Vans, Longsleeve</h4>
+    <p class="card-text">Price: 500</p>
+    <a href="#" data-name="Vans Longsleeve" data-price="500" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+    </div>
+</div>
+<br /><br />
+
+        <div class="col">
+        <div class="card" style="width: 50rem;">
+           <img class="card-img-top" src="../Shopping cart/vanzorange.jpg" alt="Card image cap">
+                 <div  style = "align-content:center;" class="card-block">
+                       <h4 class="card-title">Vans, Orange Shirt</h4>
+                             <p class="card-text">Price: 500</p>
+                                 <a href="#" data-name="Vans Orange Shirt" data-price="500" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+    </div>
+</div>
+
+
+ <!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Total price: $<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" id="btn-primary">Order now</button>
+      </div>
+    </div>
+  </div>
+</div> 
+   
+
+</body>
+</html>

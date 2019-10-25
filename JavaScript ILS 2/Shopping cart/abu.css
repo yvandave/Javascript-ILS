@@ -1,0 +1,21 @@
+#heading {
+	color: #cb4352;
+	text-decoration: none;
+	text-shadow: all;
+}
+
+
+#About {
+	font-size: 20px;
+	font-weight: 250;
+	text-align: center;
+	text-decoration: none;
+	transition: 1.5s;
+	text-shadow: 1.5px;
+	color: #660066;
+}
+
+#logo {
+	border-image: 15px;
+
+}
